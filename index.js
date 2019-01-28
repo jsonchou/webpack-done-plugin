@@ -8,6 +8,8 @@ const path = require('path');
 const process = require('process');
 const os = require('os');
 const exec = require('child_process').execSync;
+const chalk=require('chalk')
+
 
 class WebpackDonePlugin {
     constructor(options) {
@@ -24,6 +26,7 @@ class WebpackDonePlugin {
     }
     onCompilationDone(results) {
         if (!results.hasErrors()) {
+            console.log(chalk.green('build done, prepare for your own command\r\n'))
             this.options.cb && this.options.cb(results)
         }
     };

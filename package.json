@@ -1,6 +1,6 @@
 {
   "name": "webpack-done-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jsonchou/webpack-done-plugin/issues"
   },
-  "homepage": "https://github.com/jsonchou/webpack-done-plugin#readme"
+  "homepage": "https://github.com/jsonchou/webpack-done-plugin#readme",
+  "dependencies": {
+    "chalk": "^2.4.2"
+  }
 }
